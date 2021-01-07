@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <script src="js/config.js"></script>
+    <script src="js/lib.js"></script>
+    <title>Costumer Service</title>
+  </head>
+  <body>
+    <div class="workSpace">
+      <a class="logo" href="./index.html"><img src="./imgs/logo.png" alt="" /></a>
+      <div class="currentCostumer">
+        <h2>Chat Room</h2>
+      </div>
+      <div class="chatArea">
+        <ul id="dispalyzone"></ul>
+        <div class="inputPlace">
+          <input id="inputarea" placeholder="Enter message"></input>
+          <button id="questionSubmit"><img src="./imgs/submit.png" alt="" /></button>
+          <button id="showall">All</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://weimazon.online/socket.io/socket.io.js"></script>
+    <script src="./js/service.js"></script>
+  </body>
+</html>

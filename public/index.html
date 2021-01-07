@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ecommerce website. updated at 201903281012." />
+    <title>Stylish 2019</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+    <script src="js/config.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="padding-mobile"></div>
+      <div class="logo">
+        <a href="./"><img src="imgs/logo.png" /></a>
+      </div>
+      <nav>
+        <div class="item"><a href="./?tag=women">女裝</a></div>
+        <div class="item"><a href="./?tag=men">男裝</a></div>
+        <div class="item"><a href="./?tag=accessories">配件</a></div>
+      </nav>
+      <div class="feature">
+        <form class="item" action="./">
+          <input type="text" class="search" name="tag" />
+        </form>
+        <a href="cart.html" class="item cart"><div id="cart-qty" class="qty"></div></a>
+        <div class="item member">
+          <img src="imgs/member.png" />
+        </div>
+      </div>
+    </header>
+    <nav class="mobile">
+      <div class="item"><a href="./?tag=women">女裝</a></div>
+      <div class="item"><a href="./?tag=men">男裝</a></div>
+      <div class="item"><a href="./?tag=accessories">配件</a></div>
+    </nav>
+    <div class="padding-header-mobile"></div>
+    <div class="feature-mobile">
+      <a class="item" href="cart.html">
+        <div class="cart"><div id="cart-qty-mobile" class="qty"></div></div>
+        購物車
+      </a>
+      <div class="item member">
+        <img src="imgs/member-mobile.png" />
+        會員
+      </div>
+    </div>
+    <div class="keyvisual" id="keyvisual">
+      <div class="step"></div>
+    </div>
+    <main>
+      <div class="view">
+        <div id="products" class="products"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="view">
+        <div class="link link-0">
+          <div class="item"><a id='backsystem'>後台系統</a></div>
+          <div class="item">關於 Stylish</div>
+          <div class="item">服務條款</div>
+          <div class="item">隱私政策</div>
+        </div>
+        <div class="link link-1">
+          <div class="item">聯絡我們</div>
+          <div class="item">FAQ</div>
+        </div>
+        <div class="social">
+          <img src="imgs/line.png" />
+          <img src="imgs/twitter.png" />
+          <img src="imgs/facebook.png" />
+        </div>
+        <div class="copyright">&copy; 2020. All rights reserved.</div>
+      </div>
+    </footer>
+    <div class="chat">
+      <div id="chat-btn">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <h3>詢問客服</h3>
+    </div>
+    <div class="chatzoom close">
+      <div class="comonmenu">
+        <select id="common">
+          <option value="" disabled>--常見問題--</option>
+          <option value="付款問題">付款問題</option>
+          <option value="寄件問題">寄件問題</option>
+          <option value="退換貨問題">退換貨問題</option>
+        </select>
+        <button id="hide">X</button>
+      </div>
+      <ul id="displayzone">
+        <div class="welcomeMessage">歡迎使用客服</div>
+        <!-- <li>
+          <div class="head"><img src="./imgs/cart.png" alt="" /></div>
+          <div class="message">fjdajf;ldjaklfjdl;ajfldjsldddddddddddddddddddddafjdljafkdjaf;ldjsalf</div>
+        </li> -->
+      </ul>
+      <div class="inputarea">
+        <input name="" id="inputplace" rows="1" placeholder="Enter message"></input>
+        <button type="submit" id="questionSubmit"><img src="./imgs/submit.png" style="width: inherit" alt="" /></button>
+      </div>
+    </div>
+
+    <div id="loading" class="loading">
+      <img src="imgs/loading.gif" />
+    </div>
+    <script src="https://weimazon.online/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>

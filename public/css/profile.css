@@ -1,0 +1,276 @@
+@import "common.css";
+body {
+  box-sizing: border-box;
+}
+/* main */
+main .view-profile {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+}
+
+main .view-profile .picture {
+  width: 200px;
+  height: 200px;
+  border: 10px solid #fff;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  z-index: 100;
+}
+
+main #profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .view-profile .profile::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: absolute;
+  top: 40px;
+  left: 85px;
+  z-index: -100;
+  /* box-shadow: 3px -1px 5px 5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 23px -4px 28px -8px rgba(150, 150, 150, 1);
+}
+
+main .view-profile .profile,
+main .view-profile .favo {
+  width: 90%;
+  padding: 20px;
+  margin: 100px auto 60px;
+  border-radius: 5px;
+  background-color: #fff;
+  /* box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 11px 3px 28px -8px rgba(150, 150, 150, 1);
+
+  z-index: 0;
+}
+
+main .view-profile .favo {
+  margin-top: 0;
+}
+
+main .view-profile .favo h2 {
+  margin: 10px auto 30px;
+}
+
+main .view-profile .profile .basic {
+  width: 66%;
+  margin-left: 266px;
+  margin-bottom: -5px;
+  margin-top: 40px;
+  font-size: 1.3em;
+}
+
+.basic .memberId,
+.basic .name,
+.basic .email {
+  margin: 10px 0;
+}
+
+main .view-profile .profile .basic .title {
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+main .view-profile .profile .feature-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: -10px;
+}
+
+/* main .view-profile .profile .order-wrapper,
+main .view-profile .profile .logout-wrapper {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: rgb(251, 196, 63);
+  background: linear-gradient(
+    336deg,
+    rgba(251, 196, 63, 0.5685983011368609) 0%,
+    rgba(241, 135, 156, 0.6638363963749563) 100%
+  );
+} */
+/* --- */
+
+main .view-profile .profile .order-wrapper,
+main .view-profile .profile .logout-wrapper {
+  width: 104px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(87, 87, 87);
+  cursor: pointer;
+  margin: 16px;
+  height: 34px;
+  padding-top: 10px;
+
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  letter-spacing: 1px;
+
+  border-radius: 10px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+main .view-profile .profile .order-wrapper:hover,
+main .view-profile .profile .logout-wrapper:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+main .view-profile .profile .order-wrapper:focus,
+main .view-profile .profile .logout-wrapper :focus {
+  outline: none;
+}
+
+main .view-profile .profile .order-wrapper,
+main .view-profile .profile .logout-wrapper {
+  background-image: linear-gradient(
+    to right,
+    #faa1ad,
+    #ffb779,
+    #ffbf7b,
+    #faa186
+  );
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+/* --- */
+
+.favo-list {
+  box-sizing: border-box;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favo-item {
+  width: 50%;
+  margin-bottom: 33px;
+  display: grid;
+  grid-template-columns: 30% 2% 50% 18%;
+  grid-template-rows: repeat(3, auto);
+  justify-items: start;
+  align-items: center;
+}
+
+.favo-item .favo-img {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  min-width: 150px;
+  width: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  /* background-color: tomato; */
+}
+
+.favo-item .favo-title {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin-left: 30px;
+  margin-top: -20px;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.favo-item .favo-id {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin-left: 30px;
+  margin-top: -20px;
+}
+
+.favo-item .favo-price {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin-left: 30px;
+}
+
+.favo-item .favo-icon {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  width: 30px;
+  height: 30px;
+  background-color: tomato;
+}
+
+#costumerName {
+  margin-left: 23px;
+}
+
+@media (max-width: 1000px) {
+  #costumerName {
+    margin-left: 19px;
+  }
+  main > .view-profile > .profile > .basic {
+    font-size: 1.1em;
+  }
+  .favo-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  main > .view-profile {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main > .view-profile > .profile::after {
+    display: none;
+  }
+
+  main > .view-profile > .picture {
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    left: auto;
+  }
+  main > .view-profile > .profile {
+    height: auto;
+    margin: 30px auto;
+    z-index: -1;
+  }
+  main > .view-profile > .profile > .basic {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 120px 0 0 0;
+    font-size: 1em;
+  }
+
+  main > .view-profile > .profile > .order {
+    width: 32%;
+    height: 40px;
+    font-size: 0.9em;
+    position: initial;
+    margin: auto;
+  }
+}

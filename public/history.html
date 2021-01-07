@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ecommerce website. updated at 2020." />
+    <title>歷史訂單紀錄</title>
+    <link rel="stylesheet" type="text/css" href="css/history.css" media="all" />
+    <script src="./js/config.js"></script>
+    <script src="./js/lib.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="padding-mobile"></div>
+      <div class="logo">
+        <a href="./"><img src="imgs/logo.png" /></a>
+      </div>
+      <nav>
+        <div class="item"><a href="./?tag=women">女裝</a></div>
+        <div class="item"><a href="./?tag=men">男裝</a></div>
+        <div class="item"><a href="./?tag=accessories">配件</a></div>
+      </nav>
+      <div class="feature">
+        <form class="item" action="./">
+          <input type="text" class="search" name="tag" />
+        </form>
+        <a href="cart.html" class="item cart"
+          ><div id="cart-qty" class="qty"></div
+        ></a>
+        <div class="item member">
+          <img src="imgs/member.png" />
+        </div>
+      </div>
+    </header>
+    <nav class="mobile">
+      <div class="item"><a href="./?tag=women">女裝</a></div>
+      <div class="item"><a href="./?tag=men">男裝</a></div>
+      <div class="item"><a href="./?tag=accessories">配件</a></div>
+    </nav>
+    <div class="padding-header-mobile"></div>
+    <div class="feature-mobile">
+      <a class="item" href="cart.html">
+        <div class="cart"><div id="cart-qty-mobile" class="qty"></div></div>
+        購物車
+      </a>
+      <div class="item member">
+        <img src="imgs/member-mobile.png" />
+        會員
+      </div>
+    </div>
+    <main>
+      <div class="view">
+        <!-- 訂單紀錄 -->
+        <h2>所有訂單</h2>
+        <div class="orders">
+          <div class="status">
+            <div class="pending current">處理中</div>
+            <div class="done">已完成</div>
+          </div>
+          <div class="list">
+            <!-- 測試用 start -->
+            <!-- <div class="row">
+              <div class="title title-date">
+                <img src="./imgs/icon-calendar.svg" />
+                <div class="date">2020-11-05</div>
+                <img class="down" src="./imgs/caret-down-solid.svg" />
+              </div>
+              <div class="info">
+                <div class="basic">
+                  <div class="info-basic">
+                    <div class="info-numbers">
+                      <div class="title">訂單編號</div>
+                      <div class="numbers"></div>
+                    </div>
+                    <div class="info-name">
+                      <div class="title">收件人</div>
+                      <div class="name">ooo</div>
+                    </div>
+                    <div class="info-address">
+                      <div class="title">收件地址</div>
+                      <div class="address">台北市信義區基隆路一段178號</div>
+                    </div>
+                    <div class="info-total">
+                      <div class="title">總金額</div>
+                      <div class="total">990</div>
+                    </div>
+                  </div>
+
+                  <div class="info-status">
+                    <div class="status">
+                      <div class="status-time">2020-11-05<br />15:00</div>
+                      <div class="container">
+                        <div class="circle current"></div>
+                      </div>
+                      <div class="status-icon">
+                        <img src="./imgs/icon-storage.svg" alt="備貨中" />
+                      </div>
+                      <div class="status-description">備貨中</div>
+                    </div>
+                    <div class="status">
+                      <div class="status-time">2020-11-05<br />16:00</div>
+                      <div class="container"><div class="circle"></div></div>
+                      <div class="status-icon">
+                        <img src="./imgs/icon-list.svg" alt="已出貨" />
+                      </div>
+                      <div class="status-description">已出貨</div>
+                    </div>
+                    <div class="status">
+                      <div class="status-time">2020-11-05<br />17:00</div>
+                      <div class="container"><div class="circle"></div></div>
+                      <div class="status-icon">
+                        <img src="./imgs/icon-shipped.svg" alt="已配送" />
+                      </div>
+                      <div class="status-description">已配送</div>
+                    </div>
+                    <div class="status">
+                      <div class="status-time">2020-11-05<br />19:00</div>
+                      <div class="container"><div class="circle"></div></div>
+                      <div class="status-icon">
+                        <img src="./imgs/icon-shipping.svg" alt="已送達" />
+                      </div>
+                      <div class="status-description">已送達</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="topic">訂單詳情</div>
+                <div class="detail">
+                  <div class="detail-title">
+                    <div class="title">購買品項</div>
+                    <div class="title">顏色</div>
+                    <div class="title">尺寸</div>
+                    <div class="title">單價</div>
+                    <div class="title">數量</div>
+                  </div>
+
+                  <div class="detail-content">
+                    <div class="product">透肌澎澎防曬襯衫</div>
+                    <div class="color"></div>
+                    <div class="size">S</div>
+                    <div class="price">990</div>
+                    <div class="qty">1</div>
+                  </div>
+                  <div class="detail-content">
+                    <div class="product">透肌澎澎防曬襯衫</div>
+                    <div class="color"></div>
+                    <div class="size">S</div>
+                    <div class="price">990</div>
+                    <div class="qty">1</div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- 測試用 end -->
+          </div>
+        </div>
+        <!-- 推薦商品 -->
+        <div class="recommend">
+          <h2>你可能也會喜歡...</h2>
+          <a class="product">
+            <div class="photo"></div>
+            <div class="colors"></div>
+            <div class="name"></div>
+            <div class="price"></div>
+          </a>
+          <a class="product">
+            <div class="photo"></div>
+            <div class="colors"></div>
+            <div class="name"></div>
+            <div class="price"></div>
+          </a>
+          <a class="product">
+            <div class="photo"></div>
+            <div class="colors"></div>
+            <div class="name"></div>
+            <div class="price"></div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="view">
+        <div class="link link-0">
+          <div class="item">關於 Stylish</div>
+          <div class="item">服務條款</div>
+          <div class="item">隱私政策</div>
+        </div>
+        <div class="link link-1">
+          <div class="item">聯絡我們</div>
+          <div class="item">FAQ</div>
+        </div>
+        <div class="social">
+          <img src="imgs/line.png" />
+          <img src="imgs/twitter.png" />
+          <img src="imgs/facebook.png" />
+        </div>
+        <div class="copyright">&copy; 2020. All rights reserved.</div>
+      </div>
+    </footer>
+    <div id="loading" class="loading">
+      <img src="imgs/loading.gif" />
+    </div>
+    <script src="./js/history.js"></script>
+    <script src="./js/recommend.js"></script>
+  </body>
+</html>

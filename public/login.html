@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ecommerce website. updated at 201903281012." />
+    <title>Stylish</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css" media="all" />
+
+    <script src="js/config.js"></script>
+    <script src="js/lib.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="padding-mobile"></div>
+        <div class="logo"><a href="./"><img src="imgs/logo.png" /></a></div>
+        <nav>
+            <div class="item"><a href="./?tag=women">女裝</a></div>
+            <div class="item"><a href="./?tag=men">男裝</a></div>
+            <div class="item"><a href="./?tag=accessories">配件</a></div>
+        </nav>
+        <div class="feature">
+            <form class="item" action="./">
+                <input type="text" class="search" name="tag" />
+            </form>
+            <a href="cart.html" class="item cart">
+                <div id="cart-qty" class="qty"></div>
+            </a>
+            <div class="item member">
+                <img src="imgs/member.png" />
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile">
+        <div class="item"><a href="./?tag=women">女裝</a></div>
+        <div class="item"><a href="./?tag=men">男裝</a></div>
+        <div class="item"><a href="./?tag=accessories">配件</a></div>
+    </nav>
+
+    <div class="padding-header-mobile"></div>
+
+    <div class="feature-mobile">
+        <a class="item" href="cart.html">
+            <div class="cart">
+                <div id="cart-qty-mobile" class="qty"></div>
+            </div>
+            購物車
+        </a>
+        <div class="item member">
+            <img src="imgs/member-mobile.png" />
+            會員
+        </div>
+    </div>
+
+    <main>
+        <div class="container" id="container">
+            <!-- 註冊 Sign-up -->
+            <div class="form-container sign-up-container">
+                <div class="login__layout">
+                    <h1>創建帳號</h1>
+                    <div class="social-container">
+                        <a href="#" id="signIn_fb1" class="social">FB<i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <span>或使用您的電子郵件進行註冊</span>
+                    <input id="signup__name" type="name" placeholder="請輸入 User name" />
+                    <input id="signup__email" type="email" placeholder="請輸入 Email" />
+                    <input id="signup__pw" type="password" placeholder="請輸入 密碼" />
+                    <input id="signup__pw--confirm" type="password" placeholder="請再輸入一次密碼" />
+                    <button onclick="signupAJAX()">註冊</button>
+                </div>
+            </div>
+            <!-- 登入 Login -->
+            <div class="form-container sign-in-container">
+                <div class="login__layout">
+                    <h1>登入</h1>
+                    <div class="social-container">
+                        <a href="#" id="signIn_fb2" class="social">FB<i class="fab fa-facebook-f"></i></a>
+
+                    </div>
+                    <span>或使用您的帳戶</span>
+                    <input id="login__email" type="email" placeholder="請輸入Email" autocomplete="on" />
+                    <input id="login__pw" type="password" placeholder="請輸入密碼" autocomplete="on" />
+                    <a href="#">忘記密碼了?</a>
+                    <button id="signIn_native">登入</button>
+                </div>
+            </div>
+            <!--  -->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>歡迎回來！</h1>
+                        <h2>請登錄您的帳號<h2>
+                                <button class="ghost" id="signIn">點此登入</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>沒有會員?</h1>
+                        <p> 建立帳戶 </p>
+                        <button class="ghost" id="signUp">點此註冊</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="view">
+            <div class="link link-0">
+                <div class="item">關於 Stylish</div>
+                <div class="item">服務條款</div>
+                <div class="item">隱私政策</div>
+            </div>
+            <div class="link link-1">
+                <div class="item">聯絡我們</div>
+                <div class="item">FAQ</div>
+            </div>
+            <div class="social">
+                <img src="imgs/line.png" />
+                <img src="imgs/twitter.png" />
+                <img src="imgs/facebook.png" />
+            </div>
+            <div class="copyright">
+                &copy; 2020. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <div id="loading" class="loading">
+        <img src="imgs/loading.gif" />
+    </div>
+
+    <script src="js/login__layout.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
+
+
+</body>
+
+</html>

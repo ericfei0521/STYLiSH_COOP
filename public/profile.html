@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stylish 個人資訊</title>
+  <link rel="stylesheet" type="text/css" href="css/profile.css" media="all" />
+  <script src="js/config.js"></script>
+  <script src="js/lib.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="padding-mobile"></div>
+    <div class="logo">
+      <a href="./"><img src="imgs/logo.png" /></a>
+    </div>
+    <nav>
+      <div class="item"><a href="./?tag=women">女裝</a></div>
+      <div class="item"><a href="./?tag=men">男裝</a></div>
+      <div class="item"><a href="./?tag=accessories">配件</a></div>
+    </nav>
+    <div class="feature">
+      <form class="item" action="./">
+        <input type="text" class="search" name="tag" />
+      </form>
+      <a href="cart.html" class="item cart">
+        <div id="cart-qty" class="qty"></div>
+      </a>
+      <div class="item member">
+        <img src="imgs/member.png" />
+      </div>
+    </div>
+  </header>
+  <nav class="mobile">
+    <div class="item"><a href="./?tag=women">女裝</a></div>
+    <div class="item"><a href="./?tag=men">男裝</a></div>
+    <div class="item"><a href="./?tag=accessories">配件</a></div>
+  </nav>
+  <div class="padding-header-mobile"></div>
+  <div class="feature-mobile">
+    <a class="item" href="cart.html">
+      <div class="cart">
+        <div id="cart-qty-mobile" class="qty"></div>
+      </div>
+      購物車
+    </a>
+    <div class="item member">
+      <img src="imgs/member-mobile.png" />
+      會員
+    </div>
+  </div>
+  <main>
+    <div class="view-profile">
+      <div class="picture">
+        <img id="profile-picture" src="./imgs/member_peach.jpg" />
+      </div>
+      <div class="profile">
+        <div class="basic">
+          <div class="memberId">
+            <span class="title">會員ID</span>
+            <span id ='costumerID'></span>
+          </div>
+          <div class="name">
+            <span class="title">姓名</span>
+            <span id ='costumerName'></span>
+          </div>
+          <div class="email">
+            <span class="title">E-mail</span>
+            <span id ='costumeremail'></span>
+          </div>
+        </div>
+
+        <!-- <div class="logout">
+          <button onclick="logoutAJAX()">logout</button>
+        </div> -->
+        <div class="feature-buttons">
+          <div class="order-wrapper">
+            <a href="./history.html" class="order">訂單查詢</a>
+          </div>
+          <div class="logout-wrapper">
+            <div class="logout">登出</div>
+          </div>
+        </div>
+      </div>
+      <div class="favo">
+        <h2>我的收藏</h2>
+        <div class="favo-list">
+          <!-- <div class="favo-item">
+            <div class="favo-img">product image</div>
+            <div class="favo-title">純色輕薄百搭襯衫</div>
+            <div class="favo-id">201807242211</div>
+            <div class="favo-price">NT.799</div>
+            <div class="favo-icon"></div>
+          </div>
+          <div class="favo-item">
+            <div class="favo-img">product image</div>
+            <div class="favo-title">純色輕薄百搭襯衫</div>
+            <div class="favo-id">201807242211</div>
+            <div class="favo-price">NT.799</div>
+            <div class="favo-icon"></div>
+          </div>
+          <div class="favo-item">
+            <div class="favo-img">product image</div>
+            <div class="favo-title">純色輕薄百搭襯衫</div>
+            <div class="favo-id">201807242211</div>
+            <div class="favo-price">NT.799</div>
+            <div class="favo-icon"></div>
+          </div>
+          <div class="favo-item">
+            <div class="favo-img">product image</div>
+            <div class="favo-title">純色輕薄百搭襯衫</div>
+            <div class="favo-id">201807242211</div>
+            <div class="favo-price">NT.799</div>
+            <div class="favo-icon"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="view">
+      <div class="link link-0">
+        <div class="item">關於 Stylish</div>
+        <div class="item">服務條款</div>
+        <div class="item">隱私政策</div>
+      </div>
+      <div class="link link-1">
+        <div class="item">聯絡我們</div>
+        <div class="item">FAQ</div>
+      </div>
+      <div class="social">
+        <img src="imgs/line.png" />
+        <img src="imgs/twitter.png" />
+        <img src="imgs/facebook.png" />
+      </div>
+
+      <div class="copyright">&copy; 2020. All rights reserved.</div>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>
